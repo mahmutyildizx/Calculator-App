@@ -1,26 +1,35 @@
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 body {
     margin: 0;
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .calc{
     width: 380px;
     background-color: #000;
     color: #fff;
     margin-top: 50px;
-    box-shadow: 0 -6px 0 #fff, 0 1px 6px rgba(0,0,0, .65);
+    -webkit-box-shadow: 0 -6px 0 #fff, 0 1px 6px rgba(0,0,0, .65);
+            box-shadow: 0 -6px 0 #fff, 0 1px 6px rgba(0,0,0, .65);
 }
 .screen {
     font-size: 40px;
     font-family: 'Courier New', Courier, monospace;
     text-align: right;
     padding: 20px 5px;
-    box-shadow: 0 -6px 0 #fff, 0 1px 6px rgba(0,0,0, .65);
+    -webkit-box-shadow: 0 -6px 0 #fff, 0 1px 6px rgba(0,0,0, .65);
+            box-shadow: 0 -6px 0 #fff, 0 1px 6px rgba(0,0,0, .65);
 }
 .calcButton {
     background-color: #d8d9db;
@@ -55,8 +64,13 @@ body {
     width: 74.8%
 }
 .calcRow{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-content: stretch;
-    justify-content: space-between;
+    -ms-flex-line-pack: stretch;
+        align-content: stretch;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-bottom: 0.5%
 }
